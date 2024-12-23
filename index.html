@@ -1,33 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <title>TikTok Login Kit - Connexion</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; URL=https://www.tiktok.com/">
+    <title>Redirection vers TikTok</title>
 </head>
 <body>
-  <h1>Se connecter avec TikTok</h1>
-  
-  <!-- Bouton ou lien qui redirige vers TikTok -->
-  <button onclick="redirectToTikTok()">Se connecter avec TikTok</button>
-  
-  <script>
-    /**
-     * Fonction de redirection vers l'écran d'autorisation de TikTok
-     */
-    function redirectToTikTok() {
-      // Remplacez ces variables par vos propres informations
-      const clientKey   = 'VOTRE_CLIENT_KEY';                   // Clé client (client_key) fournie par TikTok
-      const redirectUri = encodeURIComponent('URL_DE_VOTRE_CALLBACK');  
-      const scope       = 'user.info.basic';                    // Exemple de scope (dépend de vos besoins)
-      const responseType= 'code';                               // TikTok utilise "code" pour la réponse
-      const state       = 'xyz123';                             // Chaîne aléatoire pour sécuriser l’auth
-
-      // URL d'autorisation TikTok
-      const tiktokAuthUrl = `https://www.tiktok.com/auth/authorize?client_key=${clientKey}&scope=${scope}&response_type=${responseType}&redirect_uri=${redirectUri}&state=${state}`;
-
-      // Redirection de l'utilisateur vers TikTok
-      window.location.href = tiktokAuthUrl;
-    }
-  </script>
+    <p>Vous allez être redirigé vers <a href="https://www.tiktok.com/">TikTok</a>.</p>
 </body>
 </html>
